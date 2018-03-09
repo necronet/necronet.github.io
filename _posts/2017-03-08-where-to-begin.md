@@ -36,6 +36,9 @@ We all love coursera and udacity courses, they are indeed very handy for grabbin
 ### [Reddit learnmachinelearning](https://www.reddit.com/r/learnmachinelearning/)
 Incredible the amount of information is always posted in this subreddit as well as [/r/artificial](https://www.reddit.com/r/artificial/) and [/r/machinelearning](https://www.reddit.com/r/machinelearning/) is hard to keep up with, but certainly you get anything and if you don't you can always ask. (Politely of course)
 
+### [Sebastian Raschka on Machine learning](https://sebastianraschka.com/)
+The author of Python Machine Learning, explore different concepts in detail, very handy to explore and lose in the reading of post as insightful as Linear Discrimant Analysis.
+
 ### [Mostafa Samir](https://mostafa-samir.github.io/)
 
 Even though there are only three articles, they are all well written and a good quick intro read to have a feeling of the math without being too overwhelmed.
