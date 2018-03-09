@@ -31,6 +31,8 @@ We all love coursera and udacity courses, they are indeed very handy for grabbin
 
 ### [University British Columbia](https://www.youtube.com/user/ProfNandoDF/videos)
 
+### [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/ml-intro)
+
 
 ## Blogs to get started
 
