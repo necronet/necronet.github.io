@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Where to begin?
+tags: machine-learning artificial-intelligence
 ---
 
 So are you exited about all the news about machine learning you've heard lately? I sure was a year ago, and it does not take too much times to find a significant amount of information to start with. Fortunately now there is a lot to start so I wanted to make a list of videos, articles, books that I've found to be incredible useful to start with machine learning.
