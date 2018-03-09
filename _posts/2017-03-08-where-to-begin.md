@@ -23,6 +23,8 @@ A classic among classic, this course is a perfect balance to awake the interest 
 
 We all love coursera and udacity courses, they are indeed very handy for grabbing a quick concepts, but more often than not there lack some very important mathematical proof that deepens understanding of our knowledge, here is a list of the one that I happen to find most useful.
 
+### [University at Buffalo](https://www.youtube.com/channel/UCoUn7RjAcf70P3D-QfmMu9Q/videos)
+
 ### [John Hopkins University](https://www.youtube.com/channel/UCsktEryM0y0WqtXIMjnHcZA/videos)
 
 ### [Math 301 Washington University](https://www.youtube.com/channel/UCEirPnFv_2QbvzrM67SnKPA/videos)
