@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Where to begin?
-tags: [machine-learning, artificial-intelligence]
 ---
 
 So are you exited about all the news about machine learning you've heard lately? I sure was a year ago, and it does not take too much times to find a significant amount of information to start with. Fortunately now there is a lot to start so I wanted to make a list of videos, articles, books that I've found to be incredible useful to start with machine learning.
@@ -36,8 +35,6 @@ We all love coursera and udacity courses, they are indeed very handy for grabbin
 ### [Reddit learnmachinelearning](https://www.reddit.com/r/learnmachinelearning/)
 Incredible the amount of information is always posted in this subreddit as well as [/r/artificial](https://www.reddit.com/r/artificial/) and [/r/machinelearning](https://www.reddit.com/r/machinelearning/) is hard to keep up with, but certainly you get anything and if you don't you can always ask. (Politely of course)
 
-### [Mostafa Samir](https://mostafa-samir.github.io/) 
+### [Mostafa Samir](https://mostafa-samir.github.io/)
 
 Even though there are only three articles, they are all well written and a good quick intro read to have a feeling of the math without being too overwhelmed.
-
-
