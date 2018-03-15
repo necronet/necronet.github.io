@@ -33,6 +33,8 @@ We all love coursera and udacity courses, they are indeed very handy for grabbin
 
 ### [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/ml-intro)
 
+### [Statistical Machine Learning - Carnegie Mellon](https://www.youtube.com/channel/UCfvASG5vvojkjQuBykBJUBw/videos)
+
 
 ## Blogs to get started
 
