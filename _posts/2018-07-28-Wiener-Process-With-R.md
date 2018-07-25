@@ -74,4 +74,4 @@ Last but not least we paste this using the command "convert" from [imagemagick t
 
 Et voila! the result look like this:
 
-![Motion of wiener process generated GIF](https://github.com/necronet/WienerProcess/animated-gif/bm.gif)
+![Motion of wiener process generated GIF](https://github.com/necronet/WienerProcess/blob/master/animated-gif/bm.gif)
