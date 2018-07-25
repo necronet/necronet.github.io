@@ -1,7 +1,14 @@
-# Wiener process animated GIF with R
+---
+layout: post
+title: Wiener process animated GIF with R
+tags: R wiener-process R-animation
+---
+
+An easy look into animation with R by simulating Brownian motion and creating a GIF in a few steps. This post is based on [Javi Fernandez Post](http://allthiswasfield.blogspot.com/2017/12/p-margin-bottom-0.html) "Brownian Motion GIF with R and ImageMagick".
+
 [Post complete code](https://github.com/necronet/WienerProcess)
 
-This post is based on [Javi Fernandez Post](http://allthiswasfield.blogspot.com/2017/12/p-margin-bottom-0.html) "Brownian Motion GIF with R and ImageMagick". This is a modify version with a refactor functions to generate the simulated process and some minor fixes, but the overall process keeps the same core idea.
+This is a modify version with a refactor functions to generate the simulated process and some minor fixes, but the overall process keeps the same core idea.
 
 Let's explore the concept of what **Brownian motion** is? Basically is the random motion of particles suspended in a liquid or gas (not very helpful right), there is an interesting story into how it came to be [discovered by botanist Robert Brown](https://www.youtube.com/watch?v=FAdxd2Iv-UA) and later describe by Einstein, but that is away from the scope of this humble post.
 
