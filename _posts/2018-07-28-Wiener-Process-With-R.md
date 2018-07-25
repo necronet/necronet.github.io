@@ -75,4 +75,4 @@ system("convert -delay 10 *.png bm.gif ")
 
 Et voila! the result look like this:
 
-![Motion of wiener process generated GIF](https://github.com/necronet/WienerProcess/blob/master/animated-gif/bm.gif)
+![Motion of wiener process generated GIF](https://github.com/necronet/WienerProcess/blob/master/animated-gif/bm.gif?raw=true)
