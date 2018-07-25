@@ -16,17 +16,18 @@ Let's explore the concept of what **Brownian motion** is? Basically is the rando
 
 Well basically it uses the `rnom` function to mimic the randomness of the motion, in fact I could argue that the proper title should be [Wiener Process](https://en.wikipedia.org/wiki/Wiener_process) instead of Brownian motion as it explained more the core part of the data frame that is generated, although both of those term are correlated nonetheless. Here is a snipted of the functions that randomly generate data frame of motion:
 
-	generate_random_process <- function(from, to, initial_y_value = 0) {
-	  df <- data.frame(Y = initial_y_value, X = 0)
-	  y <- initial_y_value
-	  for (g in from:to) {
-	    df[g - initial_y_value, 2] <- g
-	    df[g - initial_y_value, 1] <- y
-	    y <- y + rnorm(1, 0, 1)
-	  }
-	  return (df)
-	}
-
+{% highlight R %}
+generate_random_process <- function(from, to, initial_y_value = 0) {
+  df <- data.frame(Y = initial_y_value, X = 0)
+  y <- initial_y_value
+  for (g in from:to) {
+    df[g - initial_y_value, 2] <- g
+    df[g - initial_y_value, 1] <- y
+    y <- y + rnorm(1, 0, 1)
+  }
+  return (df)
+}
+{% endhighlight %}
 
 Simple enough the core idea is to create a dataframe with a size of values such that by calling `generate_random_process(0,5)` would output:
 
