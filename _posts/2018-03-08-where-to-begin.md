@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Where to begin?
-tags: machine-learning artificial-intelligence
+title: Wiener Process with R
+tags: statistical-learning plot-R wiener-process R-tutorial
 ---
 
 So are you exited about all the news about machine learning you've heard lately? I sure was a year ago, and it does not take too much times to find a significant amount of information to start with. Fortunately now there is a lot to start so I wanted to make a list of videos, articles, books that I've found to be incredible useful to start with machine learning.
@@ -34,6 +34,11 @@ We all love coursera and udacity courses, they are indeed very handy for grabbin
 ### [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/ml-intro)
 
 ### [Statistical Machine Learning - Carnegie Mellon](https://www.youtube.com/channel/UCfvASG5vvojkjQuBykBJUBw/videos)
+
+## Books to read
+
+### [Pattern recognition and machine learning - Christopher M. Bishop](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf) [Currently reading]
+Personally I've found this book incredibly useful to have a insight into many Statistical learning concepts, Bishop here takes a very Bayesian approach, proof and related multiple concepts. This is not a book that probably I will finish reading but instead I used it as a good reference book to clarify or refresh concepts.
 
 
 ## Blogs to get started
