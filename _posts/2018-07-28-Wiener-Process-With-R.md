@@ -1,78 +1,55 @@
 ---
 layout: post
-title: Wiener process animated GIF with R
-tags: R wiener-process R-animation
+title: Where to begin?
+tags: machine-learning artificial-intelligence
 ---
 
-An easy look into animation with R by simulating Brownian motion and creating a GIF in a few steps. This post is based on [Javi Fernandez Post](http://allthiswasfield.blogspot.com/2017/12/p-margin-bottom-0.html) "Brownian Motion GIF with R and ImageMagick".
+So are you exited about all the news about machine learning you've heard lately? I sure was a year ago, and it does not take too much times to find a significant amount of information to start with. Fortunately now there is a lot to start so I wanted to make a list of videos, articles, books that I've found to be incredible useful to start with machine learning.
 
-[Post complete code](https://github.com/necronet/WienerProcess)
+***[I will keep updating this list once I remember others]***
 
-This is a modify version with a refactor functions to generate the simulated process and some minor fixes, but the overall process keeps the same core idea.
+## Shorts and cool
 
-Let's explore the concept of what **Brownian motion** is? Basically is the random motion of particles suspended in a liquid or gas (not very helpful right), there is an interesting story into how it came to be [discovered by botanist Robert Brown](https://www.youtube.com/watch?v=FAdxd2Iv-UA) and later describe by Einstein, but that is away from the scope of this humble post.
+### [Machine Learning | El Mahdi El Mhamdi and Lê Nguyên Hoang](https://www.youtube.com/playlist?list=PLie7a1OUTSagZB9mFZnVBgsNfBtcUGJWB)
 
-## How the simulation works?
+I came across this incredible guy explaining a lot of machine learning concepts in videos as shorts as 10 minutes, which is impressive. I am still surprise it does not have more subscriber but is just a matter of time.
 
-Well basically it uses the `rnom` function to mimic the randomness of the motion, in fact I could argue that the proper title should be [Wiener Process](https://en.wikipedia.org/wiki/Wiener_process) instead of Brownian motion as it explained more the core part of the data frame that is generated, although both of those term are correlated nonetheless. Here is a snipted of the functions that randomly generate data frame of motion:
 
-{% highlight R %}
-generate_random_process <- function(from, to, initial_y_value = 0) {
-  df <- data.frame(Y = initial_y_value, X = 0)
-  y <- initial_y_value
-  for (g in from:to) {
-    df[g - initial_y_value, 2] <- g
-    df[g - initial_y_value, 1] <- y
-    y <- y + rnorm(1, 0, 1)
-  }
-  return (df)
-}
-{% endhighlight %}
+### [Andrew Ng's introduction to machine learning](https://www.coursera.org/learn/machine-learning)
 
-Simple enough the core idea is to create a dataframe with a size of values such that by calling `generate_random_process(0,5)` would output:
+A classic among classic, this course is a perfect balance to awake the interest on machine learning, it is not incredibly deep in math but it does not at all ignore it. Concepts like linear models, regularization, logistic regression, and neural network are covered and true be told a lot of use start
 
-| X           | Y |
-|-------------|---|
-| 1.49975518  | 1 |
-| 0.35771348  | 2 |
-| 0.58231513  | 3 |
-| -0.01806287 | 4 |
-| -1.07139526 | 5 |
+## A bit longer, Lectures
 
-Then is just a matter of plotting this simple X,Y coordinates into an R plot. A function to plotting all of the process `showMotion` illustrate how to do it. But the goal is to create an animated gif so instead the procedure involves generated a set of images that will draw each process per step and save it.
+We all love coursera and udacity courses, they are indeed very handy for grabbing a quick concepts, but more often than not there lack some very important mathematical proof that deepens understanding of our knowledge, here is a list of the one that I happen to find most useful.
 
-{% highlight R %}
-parp <- rep(0:1, times=7, each= 15)  
-parp<- c(parp, rep(0, 1290))
-speciation_event_pnt = 750
+### [University at Buffalo](https://www.youtube.com/channel/UCoUn7RjAcf70P3D-QfmMu9Q/videos)
 
-for (q in seq(1,1500,10)) {
-    id <- sprintf("%04d", q)
-    png(paste("bm",id,".png", sep=""), width=900, height=570, units="px", pointsize=18)  
-    par(omd = c(.05, 1, .05, 1))  
+### [John Hopkins University](https://www.youtube.com/channel/UCsktEryM0y0WqtXIMjnHcZA/videos)
 
-    plot(0, 0, ylim=c(-70,70), xlim=c(0,1500), cex=0,   
-         main=paste("Brownian motion model \n generation=", q) ,   
-         xlab="generations", ylab="trait value", font.lab=2, cex.lab=1.5 )
-    lines(df2$X[1:q],df2$Y[1:q], col="blue", lwd=1)  
-    lines(df1$X[1:q],df1$Y[1:q], col="red", lwd=1)    
-    lines(df3$X[1:q],df3$Y[1:q], col="green", lwd=1)
-    lines(df4$X[1:q],df4$Y[1:q], col="orange", lwd=1)
+### [Math 301 Washington University](https://www.youtube.com/channel/UCEirPnFv_2QbvzrM67SnKPA/videos)
 
-    if (parp[q]==0 && q > speciation_event_pnt) {
-      text(920, 70,labels="Speciation event", cex= 1, col="black", font=1)  
-      abline(v = 750, col="red", lwd=1, lty=2)
-    }
-    dev.off()  
-}
-{% endhighlight %}
+### [University British Columbia](https://www.youtube.com/user/ProfNandoDF/videos)
 
-Last but not least we paste this using the command "convert" from [imagemagick tool](https://www.r-bloggers.com/animate-gif-images-in-r-imagemagick/).
+### [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/ml-intro)
 
-{% highlight R %}
-system("convert -delay 10 *.png bm.gif ")
-{% endhighlight %}
+### [Statistical Machine Learning - Carnegie Mellon](https://www.youtube.com/channel/UCfvASG5vvojkjQuBykBJUBw/videos)
 
-Et voila! the result look like this:
+## Books to read
 
-![Motion of wiener process generated GIF](https://github.com/necronet/WienerProcess/blob/master/animated-gif/bm.gif?raw=true)
+### [Pattern recognition and machine learning - Christopher M. Bishop](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf) [Currently reading]
+Personally I've found this book incredibly useful to have a insight into many Statistical learning concepts, Bishop here takes a very Bayesian approach, proof and related multiple concepts. This is not a book that probably I will finish reading but instead I used it as a good reference book to clarify or refresh concepts.
+
+
+## Blogs to get started
+
+
+### [Reddit learnmachinelearning](https://www.reddit.com/r/learnmachinelearning/)
+Incredible the amount of information is always posted in this subreddit as well as [/r/artificial](https://www.reddit.com/r/artificial/) and [/r/machinelearning](https://www.reddit.com/r/machinelearning/) is hard to keep up with, but certainly you get anything and if you don't you can always ask. (Politely of course)
+
+### [Sebastian Raschka on Machine learning](https://sebastianraschka.com/)
+The author of Python Machine Learning, explore different concepts in detail, very handy to explore and lose in the reading of post as insightful as Linear Discrimant Analysis.
+
+### [Mostafa Samir](https://mostafa-samir.github.io/)
+
+Even though there are only three articles, they are all well written and a good quick intro read to have a feeling of the math without being too overwhelmed.
