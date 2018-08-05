@@ -5,6 +5,8 @@ tags: machine-learning clustering k-means
 ---
 K-means is an incredibly simple algorithm, with a concepts that can easily be explained to anyone. But in order to understand something better sometimes is nice to build it from scratch. R and python both have some amazing libraries for clustering, but the beauty of K-means lies in the fact in that is so simple that its implementation can fit into a tutorial like this one.
 
+[Post complete code](https://github.com/necronet/Rbasic/blob/master/clustering/kmeans.R)
+
 ## Let's refresh what K-means is
 
 On Introduction to statistical learning with R is stated that:
