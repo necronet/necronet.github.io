@@ -89,7 +89,7 @@ Then the first iteration to initialize the observation and group them based on t
 
 By plotting the results we get the following. Blue dots reflect the centroids_points. It is obvious how the distance function is grouping each observation based on the proximity to the centroid.
 
-![KMeans first iteration]({{ "/assets/img/kmeans0.png" | absolute_url }})
+![KMeans first iteration]({{ site.url }}/assets/img/kmeans0.png)
 
 Now the rest of the algorithm is rather trivial, to update the centroid is the mean of each cluster, this will allow the centroid to move towards the center of its grouped observation, and then regroup new observations.
 
@@ -120,8 +120,8 @@ So here there are two condition for the algorithm to finally finish. Either the 
 
 ### Second iteration of Kmeans
 
-![KMeans second iteration]({{ "/assets/img/kmeans1.png" | absolute_url }})
+![KMeans second iteration]({{ site.url }}/assets/img/kmeans1.png )
 
 ### Third iteration of Kmeans finally converge
 
-![KMeans third iteration]({{ "/assets/img/kmeans1.png" | absolute_url }})
+![KMeans third iteration]({{ site.url }}/assets/img/kmeans1.png)
