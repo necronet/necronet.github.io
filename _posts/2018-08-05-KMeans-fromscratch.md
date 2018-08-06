@@ -126,4 +126,4 @@ So here there are two condition for the algorithm to finally finish. Either the 
 
 ### Third iteration of Kmeans finally converge
 
-![KMeans third iteration]({{ site.url }}/assets/img/kmeans1.png)
+![KMeans third iteration]({{ site.url }}/assets/img/kmeans2.png)
