@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wiener Process with R
+title: Where to begin
 tags: statistical-learning plot-R wiener-process R-tutorial
 ---
 
