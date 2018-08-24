@@ -21,7 +21,7 @@ A classic among classic, this course is a perfect balance to awake the interest 
 
 ## A bit longer, Lectures
 
-We all love coursera and udacity courses, they are indeed very handy for grabbing a quick concepts, but more often than not there lack some very important mathematical proof that deepens understanding of our knowledge, here is a list of the one that I happen to find most useful.
+We all love coursera and udacity courses, they are indeed very handy for grabbing a quick concepts, but more often than not there lack some very important mathematical proof that deepens understanding of our knowledge, here is a list of the one I consider the most useful:
 
 ### [University at Buffalo](https://www.youtube.com/channel/UCoUn7RjAcf70P3D-QfmMu9Q/videos)
 
