@@ -48,7 +48,7 @@ The distance function definition is crucial, it's the core of K-means along with
 
 Super easy a one liner. Not much to see, move along.
 
-Now the fun part of defining kmeans function:
+Now the fun part of defining k-means function:
 
 {% highlight R %}
   kmeans <- function(k,data,iter){}
