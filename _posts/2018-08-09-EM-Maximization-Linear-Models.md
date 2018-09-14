@@ -89,7 +89,7 @@ m.step <- function(mydata, ws) {
 }
 {% endhighlight %}
 
-As a side note is important to now that the solve function will calculate the inverse of the formula inside it.
+As a side note is important to now that the solve function will calculate the inverse of the formula inside it..
 
 We can use both the e.step and m.step functions iteratively to calculate the parameters continuously until it converged, or it reached a max of iterations.
 
