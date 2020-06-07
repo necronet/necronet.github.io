@@ -10,6 +10,7 @@ description: A random walk at AI
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/99554?s=400&u=3028bd3d0cd60a238758de41af658ec81f0b11a6&v=4
+fachenteo_url: http://fachenteo.s3-website-us-east-1.amazonaws.com
 
 #
 # Flags below are optional
@@ -73,7 +74,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
