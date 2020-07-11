@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="assets/nlp_icon.jpg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					<h3>Procesamiento de lenguaje natural</h3>
+					<h4>Trabajar datos no estructurados</h4>
+					<p>
+						<small><a href="http://github.com/necronet">Jose Luis Ayerdis</a></small>
+					</p>
+
+					<aside class="notes">
+						Notas para la primera slide	
+					</aside>
+				</section>
+				<section >
+					<section >
+							<span class="fragment highlight-current-red" data-fragment-index="1">
+									Procesamiento
+							</span>
+							de
+							<span class="fragment highlight-current-red" data-fragment-index="2">
+								lenguaje natural
+							</span>
+
+							<img src="assets/computation.gif" class="fragment fade-in-then-out" data-fragment-index="1"/>
+
+							<img src="assets/languages.png" class="fragment fade-in-then-out" data-fragment-index="2"/>
+					</section>
+					<section >
+						<h2>Clasificación de texto</h2>
+					</section>
+					<section >
+						<h2>Deteccion de idiomas</h2>
+					</section>
+					<section >
+						<h2>Sistemas de traduccion</h2>
+					</section>
+					<section >
+						<h2>Sistemas Preguntas y respuestas</h2>
+					</section>
+					<section >
+						<h2>Segmentacion de palabras</h2>
+					</section>
+					<section >
+						<h2>Resumen automático</h2>
+					</section>
+					<section >
+						<h2>Reconocimiento de entidades</h2>
+					</section>
+					<section >
+						<h2>Generacion de texto</h2>
+					</section>
+					<section >
+						<h2>Analisis de sentimiento</h2>
+					</section>
+					<section >
+						<h2>Inferencia de topicos</h2>
+					</section>
+				</section>
+				<section>
+				<section>
+					<h3>Datos estructurados</h3>
+					
+					<div class="h-hstack">
+						<div class="fragment fade-in" data-fragment-index="1">
+							<span class="fragment" data-fragment-index="1">
+								Arreglos
+							</span>	
+							<div class="r-hstack justify-center">
+								<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+								<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+								<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+							</div>
+						</div>
+
+						<div class="fragment fade-in" data-fragment-index="2">
+						
+							<div class="fragment" data-fragment-index="1">
+								<span>Arboles</span>	
+								<div class="r-hstack justify-center">
+									<img src="assets/tree-icon.png"/>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="fragment fade-in" data-fragment-index="3">
+							<span>Grafos</span>	
+							<div class="r-hstack justify-center">
+								<img src="assets/graph.svg"/>
+							</div>
+						</div>
+					</div>
+					
+
+				</section>
+					<section>
+						<h3>Datos no estructurado</h3>
+						<div class="r-hstack">
+							<div class="fragment fade-in" data-fragment-index="1">
+								<span>Audio</span>	
+								<div class="r-hstack justify-center">
+									<img src="assets/audio.gif" width="200"/>
+								</div>
+							</div>
+
+							<div class="fragment fade-in" data-fragment-index="2">
+							<span>Videos</span>	
+							<div class="r-hstack justify-center" data-fragment-index="2">
+								<img src="assets/video.gif" width="200"/>
+							</div>
+							</div>
+
+							<div class="fragment fade-in" data-fragment-index="3">
+								<span class="fragment highlight-current-red">Texto libre</span>	
+								<div class="r-hstack justify-center" data-fragment-index="3">
+									<img src="assets/written_text.png" width="200"/>
+								</div>
+							</div>
+						</div>
+							
+						
+					</section>
+
+					<section>
+						<h1>Texto libre</h1>
+						<ul>
+						<li class="fragment" data-fragment-index="1">
+							Comentarios
+						</li>
+						<li class="fragment" data-fragment-index="2">
+							Post en redes sociales
+						</li>
+						<li class="fragment" data-fragment-index="3">
+							Correos electronicos y Chats
+						</li>
+						<li class="fragment" data-fragment-index="4">
+							Documentos de texto
+						</li>
+						<li class="fragment" data-fragment-index="5">
+							Logs de aplicaciones 
+						</li>
+						<li class="fragment" data-fragment-index="6">
+							Datos de sensores
+						</li>
+						</ul>
+					</section>
+				</section>
+				<section>NLP vs Text Mining</section>
+				<section>
+					<h3>Librerias en python</h3>
+					
+					
+						<div class="fragment fade-in" data-fragment-index="1">
+							NLTK
+						</div>
+
+						<div class="fragment fade-in" data-fragment-index="2">
+							Gensim
+						</div>
+
+						<div class="fragment fade-in" data-fragment-index="3">
+							Polyglot
+						</div>
+
+						<div class="fragment fade-in" data-fragment-index="4">
+							<span class="fragment highlight-current-red">
+							Spacy
+							</span>
+						</div>
+					
+
+				</section>
+				<section>Ejemplo Analisis de sentimiento</section>
+				<section>
+					<h2>Gracias totales</h2>
+					<div><img src="assets/graciastotales.webp"/></div>
+					<p>
+					<a href="http://twitter.com/necronet">
+							<i class="fa fa-twitter fa-fw"></i>
+							@necronet
+					</a>
+					
+					<a href="http://github.com/necronet">
+						<i class="fa fa-github fa-fw"></i>
+						@necronet
+					</a>
+					</p>
+
+					<small>Slides creadas con <a href="http://revealjs.com/">revealjs</a></small>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script>
+			Reveal.on( 'fragmentshown', event => {
+			// event.fragment = the fragment DOM element
+			console.log(event.fragment)
+			} );
+
+		</script>
+	</body>
+</html>
