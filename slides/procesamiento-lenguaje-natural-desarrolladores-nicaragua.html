@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Procesamiento de Lenguaje naturales, como trabajar datos no estructurado</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -189,7 +189,96 @@
 					
 
 				</section>
-				
+				<section>
+					<section>
+						<h2>Spacy</h2>
+						<ul>
+							<li>Tokenizacion</li>
+							<li>Stemming y Lemmatización</li>
+							<li>Part-Of-Speech</li>
+						</ul>
+					</section>
+
+					<section data-auto-animate>
+						<h2>Tokenizacion</h2>
+						<div class="r-stack">
+							<span class="fragment">The road to creativity passes so close to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> road to creativity passes so close to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> to creativity passes so close to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> creativity passes so close to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> passes so close to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> so close to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> close to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> to the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> the madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> madhouse and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> <mark>madhouse</mark> and often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> <mark>madhouse</mark> <mark>and</mark> often detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> <mark>madhouse</mark> <mark>and</mark> <mark>often</mark> detours or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> <mark>madhouse</mark> <mark>and</mark> <mark>often</mark> <mark>detours</mark> or ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> <mark>madhouse</mark> <mark>and</mark> <mark>often</mark> <mark>detours</mark> <mark>or</mark> ends there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> <mark>madhouse</mark> <mark>and</mark> <mark>often</mark> <mark>detours</mark> <mark>or</mark> <mark>ends</mark> there</span>
+							<span class="fragment"><mark>The</mark> <mark>road</mark> <mark>to</mark> <mark>creativity</mark> <mark>passes</mark> <mark>so</mark> <mark>close</mark> <mark>to</mark> <mark>the</mark> <mark>madhouse</mark> <mark>and</mark> <mark>often</mark> <mark>detours</mark> <mark>or</mark> <mark>ends</mark> <mark>there</mark></span>
+						</div>
+					</section>
+					<section data-auto-animate>
+						<h2>Tokenizacion</h2>
+						<h4>Problemas usuales</h4>
+						<ul>
+							<li>Eleccion de mas de un token puede llevar a casos extraños (Object-c)</li>
+							<li>Eleccion de espacio no es util fuera de idiomas indo-europeos (عشوائي)</li>
+							<li>Palabras contracciones en ingles como (don't, won't)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Stemming</h2>
+
+						<div class="r-stack">
+							<div class="r-hstack">
+								<div class="fragment r-stack" data-fragment-index="1">
+									<span class="fragment fade-in-then-out" data-fragment-index="2">Escribiendo</span>
+									<span class="fragment fade-in-then-out" data-fragment-index="3">Escrib<mark>iendo</mark></span>
+								</div>
+								
+								<span class="fragment fade-in-then-out" data-fragment-index="4">Escrib</span>
+							</div>
+
+							<div class="r-hstack">
+								<div class="fragment r-stack" data-fragment-index="5">
+									<span class="fragment fade-in-then-out" data-fragment-index="6">Escrito</span>
+									<span class="fragment fade-in-then-out" data-fragment-index="7">Escri<mark>to</mark></span>
+								</div>
+								
+								<span class="fragment fade-in-then-out" data-fragment-index="8">Escri</span>
+							</div>
+
+						</div>
+					</section>
+					<section>
+						<h2>Stemming</h2>
+						<h4>Encontrar automaticamente la raiz de un token, a traves de reglas deterministicas </h4>
+					</section>
+					<section>
+						<h2>Lemmatización</h2>
+						<div class="r-stack">
+							<div class="r-hstack">
+								<div class="fragment r-stack" data-fragment-index="1">
+									<span class="fragment fade-in-then-out" data-fragment-index="2">Escribiendo</span>
+								</div>
+								
+								<span class="fragment fade-in-then-out" data-fragment-index="3">Escribir</span>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Lemmatización</h2>
+						<h4>Encontrar automaticamente la raiz de un token, a traves de metodos linguisticos como Part of speech.</h4>
+					</section>
+					<section>
+						<h2>Part-Of-Speech</h2>
+						<div><img src="assets/dependency-parser.png"/></div>
+					</section>
+				</section>
 				<section>
 					<h2>Gracias totales</h2>
 					<div><img src="assets/graciastotales.webp"/></div>
