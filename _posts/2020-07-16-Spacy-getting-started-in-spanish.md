@@ -2,9 +2,16 @@
 layout: post
 title: Trabajar NLP basico con spacy
 tags: statistical-learning plot-R wiener-process R-tutorial
+excerpt_separator: <!--more-->
 ---
 
+<p style="text-align:center">
+<img src="/assets/img/dependency-parser.png" alt = "R studio crash" width ="700"/>
+</p>
+
 Spacy es una herramienta para trabajar problemas relacionados con lenguaje, con un amplio soporte de lenguajes provee una sintaxis intuitiva para operar en ambitos linguisticos.
+
+<!--more-->
 
 ## Modelos
 
