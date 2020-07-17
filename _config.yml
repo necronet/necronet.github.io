@@ -80,6 +80,10 @@ plugins:
 
 theme: minima
 
+twitter:
+  username: necronet
+  card: summary
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
