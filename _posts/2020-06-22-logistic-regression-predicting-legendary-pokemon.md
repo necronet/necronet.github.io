@@ -2,6 +2,7 @@
 layout: post
 title: Predicting a legendary pokemon through Logistic regression in R
 tags: tutorial gmlnet modelling logistic-regression SMOTE
+image: /assets/img/pokemon_overview_ggaly.png
 excerpt_separator: <!--more-->
 ---
 

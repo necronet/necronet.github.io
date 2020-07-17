@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deploying Machine learning model a simplistic approach
+image: /assets/img/flask-image.png
 tags: machine-learning deploying flask docker keras deep-learning
 ---
 

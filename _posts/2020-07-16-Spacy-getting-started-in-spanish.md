@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Trabajar NLP basico con spacy
+image: /assets/img/dependency-parser.png
+lang: es
 tags: statistical-learning plot-R wiener-process R-tutorial
 excerpt_separator: <!--more-->
 ---
