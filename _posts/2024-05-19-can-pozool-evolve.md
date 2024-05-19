@@ -1,4 +1,18 @@
-# Can Pozool be something else ? 
+--
+layout: post
+title: Can Pozool evolved
+image: /assets/img/pozool.png
+lang: en
+tags: pozool personal side-project 
+excerpt_separator: <!--more-->
+---
+
+Pozool is a point of sales aimed at small coffee/restaurant/truck food business, that back I developed back in 2014! Today I remember this time fondly and though to myself can we revive the same brand and tool and pivot it toward Short term rental business ?
+
+<!--more-->
+
+
+### Can Pozool be something else ? 
 
 
 ![Pozool logo]({{ site.url }}/assets/img/pozool.png )
